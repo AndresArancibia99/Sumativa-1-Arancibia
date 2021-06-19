@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="color: rgb(255, 255, 255)">Tienda Deportiva</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="menu.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="formulariocompras.html">Formulario Compras</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="formulario de registro.html">Formulario Registro</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="listarproductos.html">Listar Productos</a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <br><br>
+    <form>
+        <div class="container">
+            <div class="row text-center justify-content-md-center mb-3">
+                <h2>Formulario de Registro</h2>
+                <br>
+                <br>
+                <hr>
+                <br>
+                <br>
+                <div class="col col-lg-1">
+                    Nombre:
+                </div>
+                <div class="col col-lg-2">
+                    <input class="form-control" type="text" id="nombre" onkeyup="validar()">
+                </div>
+                <div class="col col-lg-2" id="errorNombre">
+                    
+                </div>
+            </div>
+            <div class="row text-center justify-content-md-center mb-3">
+                <div class="col col-lg-1">
+                    Direccion:
+                </div>
+                <div class="col col-lg-2">
+                    <input class="form-control" type="text" id="apellido" onkeyup="validar()">
+                </div>
+                <div class="col col-lg-2" id="errorApellido">
+                    
+                </div>
+            </div>
+            <div class="row text-center justify-content-md-center mb-3">
+                <div class="col col-lg-1">
+                    Email:
+                </div>
+                <div class="col col-lg-2">
+                    <input class="form-control" type="text" id="email" onkeyup="validar()">
+                </div>
+                <div class="col col-lg-2" id="errorEmail">
+                    
+                </div>
+            </div>
+            <div class="row text-center justify-content-md-center mb-3">
+                <div class="col col-lg-1">
+                    Password:
+                </div>
+                <div class="col col-lg-2">
+                    <input class="form-control" type="password" id="password" onkeyup="validar()">
+                </div>
+                <div class="col col-lg-2" id="errorPassword">
+                    
+                </div>
+            </div>
+            <div class="row text-center justify-content-md-center mb-3">
+                <div class="col col-lg-1">
+                    Confirmar Password:
+                </div>
+                <div class="col col-lg-2">
+                    <input class="form-control" type="password" id="confirmarpassword" onkeyup="validar()">
+                </div>
+                <div class="col col-lg-2" id="errorConfirmar">
+                    
+                </div>
+            </div>
+            <div class="row text-center justify-content-md-center mb-3">
+                <div class="col col-lg-1">
+                </div>
+                <div class="col col-lg-2">
+                   <input type="button" class="btn btn-dark" id="botonvalidar" value="Guardar Datos"
+                   onclick="validar(); validarTodos();">
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+<footer class="bg-dark text-center text-white">
+    <!-- Footer Links -->
+    <br>
+   <div class="container-fluid text-center text-md-left">
+ 
+     <!-- Grid row -->
+     <div class="row">
+ 
+       <!-- Grid column -->
+       <div class="col-md-6 mt-md-0 mt-3">
+ 
+         <!-- Content -->
+         <h5 class="text-uppercase">Contacto</h5>
+         <p>+569 34562312</p>
+         <p> Manuel de Tezanos 4422, Providencia</p>
+         <p> contacto@tiendadeportiva.cl</p>
+       </div>
+       <!-- Grid column -->
+ 
+       <hr class="clearfix w-100 d-md-none pb-3">
+ 
+       <!-- Grid column -->
+       <div class="col-md-3 mb-md-0 mb-3">
+ 
+         <!-- Links -->
+         <h5 class="text-uppercase">Empresa</h5>
+ <hr>
+         <ul class="list-unstyled">
+           <li>
+             <a href="#!" style="color:aliceblue">Politica de la Empresa</a>
+           </li>
+           <li>
+             <a href="#!" style="color:aliceblue">Trabaja con Nosotros</a>
+           </li>
+           <li>
+             <a href="#!" style="color:aliceblue">Noticias Corporativas</a>
+           </li>
+           <li>
+             <a href="#!" style="color:aliceblue">La Compañia</a>
+           </li>
+         </ul>
+ 
+       </div>
+       <!-- Grid column -->
+ 
+       <!-- Grid column -->
+       <div class="col-md-3 mb-md-0 mb-3">
+ 
+         <!-- Links -->
+         <h5 class="text-uppercase">Post-Venta</h5>
+         <hr>
+ 
+         <ul class="list-unstyled">
+           <li>
+             <a href="#!" style="color:aliceblue"> Preguntas Frecuentes</a>
+           </li>
+           <li>
+             <a href="#!" style="color:aliceblue"> Rastrea tu Pedido</a>
+           </li>
+           <li>
+             <a href="#!" style="color:aliceblue"> Cambios y Devoluciones</a>
+           </li>
+           <li>
+             <a href="#!" style="color:aliceblue"> Servicio al Cliente</a>
+           </li>
+         </ul>
+ 
+       </div>
+       <!-- Grid column -->
+ 
+     </div>
+     <!-- Grid row -->
+ 
+   </div>
+   <!-- Footer Links -->
+ <br>
+         <!-- Copyright -->
+         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+           © 2021 Derechos de Autor.
+           <br>
+           <a class="text-white" >Tienda Deportiva</a>
+         </div>
+         <!-- Copyright -->
+       </footer>
+<script>
+    let arreglo = new Array();
+arreglo[0]="errorNombre";
+arreglo[1]="errorApellido";
+arreglo[2]="errorEmail";
+arreglo[3]="errorPassword";
+arreglo[4]="errorConfirmar";
+
+function validar(){
+    var entrada = new Array();
+    entrada [0]=document.getElementById('nombre').value;
+    entrada [1]=document.getElementById('apellido').value;
+    entrada [2]=document.getElementById('email').value;
+    entrada [3]=document.getElementById('password').value;
+    entrada [4]=document.getElementById('confirmarpassword').value;
+
+    var error = new Array();
+    error[0] = "<span style='color:red'> Ingrese su usuario!! </span>";
+    error[1] = "<span style='color:red'> Ingrese su direccion!! </span>";
+    error[2] = "<span style='color:red'> Ingrese el email!! </span>";
+    error[3] = "<span style='color:red'> Ingrese su contraseña!! </span>";
+    error[4] = "<span style='color:red'> Repita su contraseña!! </span>"; 
+
+    //definiendo un ciclo foreach
+    for(i in entrada){
+        var mensajeError=error[i];
+        var valorArreglo=arreglo[i];
+        if(entrada[i]==""){
+            document.getElementById(valorArreglo).innerHTML = mensajeError;
+        }
+        else if(i==2){
+            var arroba = entrada[i].indexOf("@");
+            var punto=entrada[i].lastIndexOf(".");
+            if(arroba<1 || punto < arroba + 2 || entrada[i].length<punto + 2){
+                document.getElementById('errorEmail').innerHTML = 
+                "<span style='color:red'> Ingrese un email valido!! </span>";
+            }
+            else{
+                document.getElementById('errorEmail').innerHTML = 
+                "Campo Válido!";
+            }
+        }
+        else if (i == 4){
+            var primero = document.getElementById('password').value;
+            var segundo = document.getElementById('confirmarpassword').value;
+
+            if(primero != segundo){
+                document.getElementById('errorConfirmar').innerHTML = 
+                "<span style='color:red'> Los password no coinciden </span>";
+            }
+            else{
+                document.getElementById('errorConfirmar').innerHTML = 
+                "Campo Válido!";
+            }
+        }
+        else{
+            document.getElementById(valorArreglo).innerHTML=
+            "Campo Válido!";
+        }
+    }
+    
+}
+
+function validarTodos(){
+    var contador = 0;
+    for(i=0; i<5; i++){
+        var valorArreglo = arreglo[i];
+        if( document.getElementById(valorArreglo).innerHTML == "Campo Válido!!"){
+            contador++;
+        
+    }
+    
+    
+}if(contador == 5){
+    
+        document.getElementById("mensajefinal").innerHTML = "Formulario validado!";
+        console.log("Formulario Valido!")
+        console.log("Registro Listo!");
+    }
+alert("REGISTRO VALIDADO");
+}
+</script>
+</html>
